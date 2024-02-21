@@ -1,24 +1,23 @@
-import { FaReact } from "react-icons/fa";
-import React from 'react'
-import { FaGithub } from "react-icons/fa6";
+import React from 'react';
 import { FaDocker } from "react-icons/fa";
-import { IoLogoNodejs } from "react-icons/io";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { DiMongodb } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa6";
-
+import { FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si"; 
+import { FaNodeJs } from "react-icons/fa6";
+import { DiMysql } from "react-icons/di";
 
 function Skills() {
   return (
-    <div className="flex my-4 px-4 py-4 bg-slate-200 rounded-full border border-solid border-black">
-        <h5 className="mr-4 font-bold">Technologies</h5>
-        <FaReact size={35} className="mr-4" title="React"/>
-        <FaGithub size={35} className="mr-4" title="Github"/>
-        <IoLogoNodejs size={35} className="mr-4" title="Node js"/>
-        <BiLogoTailwindCss size={35} className="mr-4" title="Tailwind"/>
-        <DiMongodb size={35} className="mr-4" title="Mongodb"/>
-        <FaBootstrap size={35} className="mr-4" title="Bootstrap"/>
-        <FaDocker size={35} title="Docker"/>
+    <div className='flex my-4 px-7 py-4 bg-slate-400 border border-solid rounded-full'>
+        <h6 className='text-sm font-bold mr-8 mt-2 ml-4'> Technologies</h6>
+        <div className='flex mx-11'>
+        <FaDocker size={35} className='mr-4' />
+        <FaReact size={35} className='mr-4'/>
+        <SiMongodb size={35} className='mr-4' />
+        <FaNodeJs size={35} className='mr-4' />
+        <FaGithub size={35} className='mr-4' />
+        <DiMysql size={35} className='mr-4' />
+        </div>
     </div>
   )
 }
