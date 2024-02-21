@@ -10,7 +10,7 @@ function Navbar() {
         <header className='bg-white'>
             <nav className='flex justify-between items-center w-[92%] mx-auto pt-6 font-montserat'>
                 <div>
-                    <span className = "font-bold"><a href="http://localhost:5173/">Souvik</a></span>
+                    <span className = "text-2xl font-bold"><a href="http://localhost:5173/">Souvik</a></span>
                 </div>
                 <div>
                     <ul className='flex justify-center gap-10 py-2'>
