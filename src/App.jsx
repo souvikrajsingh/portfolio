@@ -1,20 +1,27 @@
-  import Navbar from "./components/Navbar";
-  import Skills from "./components/Skills";
+
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+import { FaMicrosoft } from "react-icons/fa";
+import ProCard from "./components/ProCard";
+
+import {NextUIProvider} from "@nextui-org/react";
+
 
   export default function App() {
 
     return (
-      <>
-      <Navbar/>
-      <div className="grid grid-cols-3 gap-4 place-items-center ">
-        <div className="px-10">
-          <img src="src\assets\Profile Picture.png" width="200" height="200" className="rounded-full" alt="" />
+      <NextUIProvider>
+      <Navbar />
+      <div className="grid grid-cols-3 gap-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        <div className="mx-20 my-20 col-span-1 fixed">
+          <img src="src\assets\Profile Picture.png" width="200" height="200" className="rounded-full ml-10" alt="profile-picture" />
           <h2 className="text-3xl font-bold mt-8">I'm Souvik Raj Singh</h2>
           <h2 className="text-lg font-semibold ">Front-End Developer turned Full stack</h2>
+          <h2 className="flex pt-1"><FaMicrosoft className="mr-2 h-4 mt-1" />Alpha Microsoft Learn Student Ambassador</h2>
         </div>  
 
-        <div className="mx-20 my-20 px-10 col-span-2 ">
-          <h1 className="text-3xl pb-4">Passionate creating  great experience for Digital Products</h1>
+        <div className=" my-24 mx-20 col-span-2 relative col-start-2">
+          <h1 className="text-3xl pb-6">Passionate creating  great experience for Digital Products</h1>
           <div className="flex space-x-4">
               <button className='bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Get in Touch</button>
               <button className='border border-black hover:border-blue-700 text-black hover:text-blue-700  py-2 px-4 rounded-full'>See my Work</button>
@@ -25,19 +32,20 @@
           <h2 className="text-xl"> Skills </h2>
           
           <Skills/>
+
+          <hr class="h-px mt-8 mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+          <h2 className="text-xl">Projects</h2>
+
+          <div className="flex gap-4"><ProCard className="pt-10"/><ProCard className="pt-10"/></div>
+
+
         </div>
 
       </div>
-      </>
+      </NextUIProvider>
     )
   }
 
 
-    function ProfilePicture({}) {
-      return (<div className="px-10">
-          <img src="src\assets\Profile Picture.png" width="200" height="200" className="rounded-full" alt="" />
-          <h2 className="text-3xl font-bold mt-8">I'm Souvik Raj Singh</h2>
-          <h2 className="text-lg font-semibold ">Front-End Developer turned Full stack</h2>
-        </div>);
-    }
-  
+    

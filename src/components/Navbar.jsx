@@ -1,5 +1,4 @@
 import React from 'react'
-import { SiAdobexd } from "react-icons/si";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineSimCardDownload } from "react-icons/md";
 
@@ -7,8 +6,8 @@ import { MdOutlineSimCardDownload } from "react-icons/md";
 function Navbar() {
   return (
     <div>
-        <header className='bg-white'>
-            <nav className='flex justify-between items-center w-[92%] mx-auto pt-6 font-montserat'>
+        <header className="bg-white" >
+            <nav className='flex justify-between items-center w-[92%] mx-auto pt-6 font-montserat fixed top-0 left-0 right-0 z-10'>
                 <div>
                     <span className = "text-2xl font-bold"><a href="http://localhost:5173/">Souvik</a></span>
                 </div>
@@ -16,7 +15,7 @@ function Navbar() {
                     <ul className='flex justify-center gap-10 py-2'>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Blogs</a></li>
-                        <li><a href="#" className='flex'>Resume <MdOutlineSimCardDownload className="h-6" /></a></li>
+                        <li><a href="#" className='flex'>Resume <MdOutlineSimCardDownload className="h-6 ml-1 animate-bounce" /></a></li>
                     </ul>
                 </div>
                 <div>
