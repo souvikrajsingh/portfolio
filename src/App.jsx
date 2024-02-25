@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import { FaMicrosoft } from "react-icons/fa";
 import ProCard from "./components/ProCard";
-
+import MyLinks from "./components/MyLinks";
 import {NextUIProvider} from "@nextui-org/react";
 
 
@@ -12,12 +12,13 @@ import {NextUIProvider} from "@nextui-org/react";
     return (
       <NextUIProvider>
       <Navbar />
-      <div className="grid grid-cols-3 gap-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-        <div className="mx-20 my-20 col-span-1 fixed">
+      <div className="grid grid-cols-3 gap-4 ">
+        <div className="mx-20 my-28 col-span-1 fixed ">
           <img src="src\assets\Profile Picture.png" width="200" height="200" className="rounded-full ml-10" alt="profile-picture" />
-          <h2 className="text-3xl font-bold mt-8">I'm Souvik Raj Singh</h2>
-          <h2 className="text-lg font-semibold ">Front-End Developer turned Full stack</h2>
-          <h2 className="flex pt-1"><FaMicrosoft className="mr-2 h-4 mt-1" />Alpha Microsoft Learn Student Ambassador</h2>
+          <h2 className="text-3xl font-bold mt-8 items-center justify-center">I'm Souvik Raj Singh</h2>
+          <h2 className="text-lg font-semibold items-center justify-center pt-2">Front-End Developer turned Full stack</h2>
+          <h2 className="flex items-center justify-center pt-2"><FaMicrosoft className="mr-2 h-4 mt-1" />Alpha Microsoft Learn Student Ambassador</h2>
+          <MyLinks/>
         </div>  
 
         <div className=" my-24 mx-20 col-span-2 relative col-start-2">
@@ -42,6 +43,7 @@ import {NextUIProvider} from "@nextui-org/react";
 
         </div>
 
+        
       </div>
       </NextUIProvider>
     )
