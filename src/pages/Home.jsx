@@ -36,7 +36,7 @@ function Home() {
             Passionate creating great experience for Digital Products
           </h1>
           <div className="flex space-x-4">
-            <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <button className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg font-bold py-2 px-4 rounded-full">
               Get in Touch
             </button>
             <button className="border border-black hover:border-blue-700 text-black hover:text-blue-700  py-2 px-4 rounded-full">
