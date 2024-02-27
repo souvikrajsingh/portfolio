@@ -4,6 +4,7 @@ import ProCard from "../components/ProCard.jsx";
 import Skills from "../components/Skills.jsx";
 import { FaMicrosoft } from "react-icons/fa";
 import { NextUIProvider } from "@nextui-org/react";
+import Footer from "../components/Footer.jsx";
 
 function Home() {
   return (
@@ -59,6 +60,9 @@ function Home() {
             <ProCard className="pt-10" />
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <Footer />
       </div>
     </NextUIProvider>
   );
